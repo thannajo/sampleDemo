@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/dukpt_encrypt_type"
+                android:textColor="@color/gray"
+                android:textSize="16sp"></TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_IPEKPlain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="IPEK Plain" />
+
+                <RadioButton
+                    android:id="@+id/rb_BDKPlain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BDK Plain" />
+
+                <RadioButton
+                    android:id="@+id/rb_IPEKEncryptWithKek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IPEK Encrypt with kek" />
+
+                <RadioButton
+                    android:id="@+id/rb_BDKEncryptWithKek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BDK Encrypt with kek" />
+
+                <RadioButton
+                    android:id="@+id/rb_IPEKEncryptWithMaster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IPEK Encrypt with master" />
+
+                <RadioButton
+                    android:id="@+id/rb_BDKEncryptWithMaster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BDK Encrypt with master" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/key_index"
+                android:textColor="@color/gray"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <com.morefun.mpos.reader.sampleDemo.view.ClearEditText
+                    android:id="@+id/et_keyIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="@string/key_index_tip"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/key_vlaue"
+                android:textColor="@color/gray"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <com.morefun.mpos.reader.sampleDemo.view.ClearEditText
+                    android:id="@+id/et_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:digits="0123456789abcdefABCDEF"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="Please Input Key"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="ksn"
+                android:textColor="@color/gray"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <com.morefun.mpos.reader.sampleDemo.view.ClearEditText
+                    android:id="@+id/et_ksn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:digits="0123456789abcdefABCDEF"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="Please Input KSN"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_dukptInit"
+                    style="@style/doneBtn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="@string/load_dukpt" />
+
+                <Button
+                    android:id="@+id/btn_getKsn"
+                    style="@style/doneBtn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="@string/get_ksn" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

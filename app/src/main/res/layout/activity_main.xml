@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Enter Username"
+
+            android:inputType="textPersonName"
+            android:textColorHighlight="@color/green"
+            android:textColorHint="@color/violet" />
+
+        <EditText
+            android:id="@+id/et_user_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/et_user_name"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Enter Password"
+
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/green"
+            android:textColorHint="@color/violet" />
+
+        <Button
+            android:id="@+id/btn_entrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_user_pass"
+            android:layout_centerInParent="true"
+            android:text="ENTER" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_top_bar" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/menuBtn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MENU" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Inserte Cedula"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp">
+
+                </TextView>
+
+                <com.morefun.mpos.reader.sampleDemo.view.ClearEditText
+                    android:id="@+id/et_cedula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:digits="0123456789abcdefABCDEF"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="Inserte Cedula"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/horizontal_divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Inserte Monto"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp">
+
+                </TextView>
+
+                <com.morefun.mpos.reader.sampleDemo.view.ClearEditText
+                    android:id="@+id/et_transAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:digits="0123456789abcdefABCDEF"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="Inserte Monto"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/horizontal_divider" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/readCard"
+                    style="@style/doneBtn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="OK" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    style="@style/doneBtn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="Cancel" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

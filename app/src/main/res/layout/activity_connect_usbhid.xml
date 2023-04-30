@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <include layout="@layout/trans_title" />-->
+
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        style="@style/doneBtn"
+        android:text="@string/open_device" />
+
+    <Button
+        android:id="@+id/isConnect"
+        android:layout_width="match_parent"
+        style="@style/doneBtn"
+        android:text="@string/is_connect" />
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="match_parent"
+        style="@style/doneBtn"
+        android:text="@string/disconnect" />
+
+</LinearLayout>

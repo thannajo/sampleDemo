@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:hint="156"
+                    android:text="780200007D57C472B603B29AF1584ED74C70D93BECD28E9C6D0264155767B75BC92850F2D5331B052D89C247649BF03E9E8F2457410FC92DF623D279828FEFC0914705DACACA9CAD1CB1C3B5C26DA6C40A4084D422BBDDE109788596BC56384EB1564A225034858BC96B2371D61AD849EC42ABC0A19BCDCBE86D66BC2BB79D952E767D98EFD95C0E92335841885A1813C0B8AF97B6635B4B3731E5E6B6F2DA016F5696C8DF5081A311B2110E81F7DC1F12E6A0CF4216936EED94E8A68F5A7370E4723FB5801321FA74693047191E89AC9C5613C125A241F750CE19DDACE9EA620477B2A924BBB6411C4169C83C3C2E35E811BC8911838B2D4ECCB3E2C6C7C8266B07F4D355641485A7512096391FF1C4FE746056556D929DAE01B1DD3B30DF2337078E552A931088B6975F29BB0F65908D7DD81C4261047C345EE9B73B48DC199EB2231A3F64E40B73743EB05446F50D348B53AD8ED239421C8F1866188AA53C276332E24508AC5CFEB35C3C74710FA02155E04C4835878E8C425C696D556024504D96E83D8DE0337FE4262A3D6DC98369DBAB170BAD0D4A6C9D30A9C3B130F2A22423304CA263506E71875348C566292A1FA76930836C855532FA23F96B14F4B531E8D886A69BD17F71D8FB38B8A7B5576C79F9A9C264AAECFA40BDCB345C30A406AE82C3032D8069D9A4BB62AA90D492FB6D7C3E8FF62E66F3BCFE00725373C80B0D72EB07412D1D2E45F6BA6BE8DDF52045E558C570143DAA0D0A58896D0590095BD16809F053CCD2DC0BA3524F02317E958128954F6A702D778983EF299E2E9C7F83973F34F400531C278D4086BE5FA423EBF8C98D950B1409AF238A898341C25922B0FCACCA0C8920E1342DE0AB2FFE4B9D1E81BABF3E916CC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/doneBtn"
+                    android:layout_width="match_parent"
+                    android:text="@string/load_rki" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">MposDemo</string>
+    <string name="search_bluetooth">"搜索蓝牙"</string>
+    <string name="last_connect">上次连接</string>
+    <string name="device_connect">设备连接</string>
+    <string name="input_pin">输入密码</string>
+    <string name="calc_mac">计算MAC</string>
+    <string name="load_dukpt">DUKPT初始化</string>
+    <string name="get_ksn">获取当前KSN</string>
+    <string name="download_master_key">下载主密钥</string>
+    <string name="download_work_key">下载工作密钥</string>
+    <string name="read_card">读卡</string>
+    <string name="read_card_error">读卡失败</string>
+    <string name="get_deviceinof">获取设备信息</string>
+    <string name="connect_bluetooth_device">连接蓝牙设备</string>
+    <string name="is_connect">是否连接</string>
+    <string name="disconnect">断开连接</string>
+    <string name="connect_device_first">终端未连接，请先连接终端</string>
+    <string name="cancel_swiper">取消刷卡</string>
+    <string name="device_already_connect">设备已连接</string>
+    <string name="device_not_connect">设备未连接</string>
+    <string name="wait_read_card">等待读卡</string>
+    <string name="reading_card">正在读卡</string>
+    <string name="waiting_input_pin">等待输入密码</string>
+    <string name="user_cancel">用户取消</string>
+    <string name="timeout">操作超时</string>
+    <string name="need_insert_iccard">请使用IC卡</string>
+    <string name="perform_online_authorization">联机授权</string>
+    <string name="get_random_numbers">获取随机数</string>
+    <string name="download_aid">AID下载</string>
+    <string name="download_capk">CAPK下载</string>
+    <string name="read_capk_list">读取CAPK列表</string>
+    <string name="read_capk_point">读取指定CAPK</string>
+    <string name="remove_bond">取消配对</string>
+    <string name="download_aid_success">AID下载成功</string>
+    <string name="download_aid_fail">AID下载失败</string>
+    <string name="download_capk_success">CAPK下载成功</string>
+    <string name="download_capk_fail">CAPK下载失败</string>
+    <string name="set_manufacturer_id">设置厂商ID</string>
+    <string name="download_master_key_success">下载主密钥成功</string>
+    <string name="download_work_key_success">下载工作密钥成功</string>
+    <string name="download_master_key_fail">下载主密钥失败</string>
+    <string name="download_work_key_fail">下载工作密钥失败</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="connected">已连接</string>
+    <string name="manufacturer_id">厂商ID</string>
+    <string name="disconnected">未连接</string>
+    <string name="setting_manufacturer">设置厂商ID</string>
+    <string name="setting_success">设置成功</string>
+    <string name="setting_fail">设置失败</string>
+    <string name="current_manufacturer">当前厂商ID</string>
+    <string name="oct_opus">八达通</string>
+    <string name="power_on">上电</string>
+    <string name="power_off">下电</string>
+    <string name="search_card">寻卡</string>
+    <string name="transfer_data">数据传输</string>
+    <string name="set_qrcode">显示二维码</string>
+    <string name="get_random">获取随机数</string>
+    <string name="terminal_update">终端升级</string>
+    <string name="choose_sign_file">选择签名文件</string>
+    <string name="choose_update_file">选择升级文件</string>
+    <string name="load_sign_file">导入签名</string>
+    <string name="mpos_ui_display">加载图片</string>
+    <string name="connect_mode">连接模式</string>
+    <string name="usb_hid">USB HID</string>
+    <string name="audio">音频</string>
+    <string name="main_menu">主菜单</string>
+    <string name="open_device">打开设备</string>
+    <string name="ble">BLE</string>
+    <string name="load_kek">下载KEK</string>
+    <string name="load_public_key">下载公钥</string>
+    <string name="load_kek_success">下载KEK成功</string>
+    <string name="load_kek_fail">下载KEK失败</string>
+    <string name="key_vlaue">密钥值</string>
+    <string name="key_kvc">校验值</string>
+    <string name="input_key_tip">请输入32位16进制密钥</string>
+    <string name="input_kvc_tip">请输入8位16进制校验值</string>
+    <string name="key_index">密钥索引</string>
+    <string name="key_index_tip">索引范围(0~9)</string>
+    <string name="set_currency_code">设置货币代码</string>
+    <string name="hkcard_power_on_success">上电成功</string>
+    <string name="hkcard_power_off_success">下电成功</string>
+    <string name="hkcard_power_on_fail">上电失败</string>
+    <string name="hkcard_power_off_fail">下电失败</string>
+    <string name="set_text">显示文本</string>
+    <string name="set_emv_param">设置EMV参数</string>
+    <string name="read_card_pressure">读卡压力测试</string>
+    <string name="read_aid_list">读取AID列表</string>
+    <string name="read_aid">读取指定AID</string>
+    <string name="m1_card">M1卡</string>
+    <string name="input_pin_switch">是否输入密码</string>
+    <string name="card">卡操作</string>
+    <string name="card_poweron">卡上电</string>
+    <string name="card_poweroff">卡下电</string>
+    <string name="card_apdu">APDU通讯</string>
+    <string name="qrcode">二维码</string>
+    <string name="qrcode_show">二维码显示</string>
+    <string name="qrcode_scan">开启扫码</string>
+    <string name="go_home">返回待机界面</string>
+    <string name="trans_success">交易成功</string>
+    <string name="masterkey_encrypt_type">主密钥加密方式</string>
+    <string name="read_card_mode">读卡模式</string>
+    <string name="insert_card">插卡</string>
+    <string name="tap_card">挥卡</string>
+    <string name="swipe_card">刷卡</string>
+    <string name="trans_type">交易类型</string>
+    <string name="trans_amount">交易金额</string>
+    <string name="trans_name">交易名称</string>
+    <string name="read_card_timeout">读卡超时</string>
+    <string name="force_online">是否强制联机</string>
+    <string name="fallback">IC卡是否允许降级</string>
+    <string name="please_input_amount">请输入金额</string>
+    <string name="mac_algorithm">MAC算法</string>
+    <string name="mac_data">MAC数据</string>
+    <string name="dukpt_encrypt_type">Dukpt加密方式</string>
+    <string name="clear_capk">清除公钥</string>
+    <string name="clear_aid">清除AID</string>
+    <string name="set_sleep_time">设置关机休眠时间</string>
+    <string name="choose_bitmap">选择图片</string>
+    <string name="setting_bitmap">设置图片</string>
+    <string name="textview_bitmap">文字转图片</string>
+    <string name="show_bitmap">显示图片</string>
+    <string name="show_text">显示文字</string>
+    <string name="kek_encrypt_tip">如果你选择KEK，以下密钥采用的KEK是11111111111111111111111111111111</string>
+    <string name="operation_success">操作成功</string>
+    <string name="operation_fail">操作失败</string>
+    <string name="load_rki">RKI下载</string>
+    <string name="input_amount">输入金额</string>
+    <string name="ble_awake">蓝牙唤醒</string>
+    <string name="choose_sign_data">签名数据</string>
+    <string name="vendor_verify">厂商验证</string>
+
+    <string name="kek_tip"><Data><![CDATA[<font color="#1E90FF">
+        1. KEK用于加密主密钥。如果你的主密钥是明文，你不需要调用这个接口。<br>
+        2. 密钥信息为32位16进制字符串。<br>
+        3. KVC是通过KEY加密16个0进行3DES计算，然后取前8位。<br>
+        例如:<br>
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * * <br>
+        Key: 11111111111111111111111111111111<br>
+        Algorithm: 3DES ECB<br>
+        Crypto operation: Encryption<br>
+        Data: 0000000000000000<br>
+        Encrypted data: 82E13665B4624DF5<br>
+        </font>]]></Data>
+    </string>
+
+    <string name="masterkey_tip"><Data><![CDATA[<font color="#1E90FF">
+        1. 下载的主密钥可以选择明文或KEK加密模式。<br>
+        2. 如果选择明文，假设明文主密钥是11111111111111111111111111111111，则KVC=82E13665<br>
+        计算如下<br>
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * <br>
+        Key: 11111111111111111111111111111111<br>
+        Algorithm: 3DES ECB<br>
+        Crypto operation: Encryption<br>
+        Data: 0000000000000000<br>
+        Padding Method: ISO9797-1 (Padding method 1)<br>
+        Encrypted data: 82E13665B4624DF5<br>
+        3. 如果选择KEK加密，假设KEK是11111111111111111111111111111111，主密钥是F40379AB9E0EC533F40379AB9E0EC533，则KVC=82E13665，计算如下<br>
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * <br>
+        Key: 11111111111111111111111111111111<br>
+        Algorithm: 3DES ECB<br>
+        Crypto operation: Decoding<br>
+        Data: F40379AB9E0EC533F40379AB9E0EC533<br>
+        Padding Method: ISO9797-1 (Padding method 1)<br>
+        Decoded data: 11111111111111111111111111111111<br>
+        * * * * * * * * * * *  * * * * * * * * * * * * * * *<br>
+        Key: 11111111111111111111111111111111<br>
+        Algorithm: 3DES ECB<br>
+        Crypto operation: Encryption<br>
+        Data: 0000000000000000<br>
+        Padding Method: ISO9797-1 (Padding method 1)<br>
+        Encrypted data: 82E13665B4624DF5<br>
+        </font>]]></Data>
+    </string>
+
+    <string name="workkey_tip"><Data><![CDATA[<font color="#1E90FF">
+        1. 工作密钥通过主密钥加密，其中PIN用来加密密码，MAC用于加密MAC。TDK用来加密磁道信息。如果您不使用磁道加密。你需要将磁道密钥设置为全0<br>
+        2. 假设你的主密钥是11111111111111111111111111111111 密文的PIN密钥是F40379AB9E0EC533F40379AB9E0EC533那么KVC=82E13665。<br>
+        计算方式如下<br>
+        * * * * * * * * * * * * * * * * * * * * * * * * * * *<br>
+        Key: 11111111111111111111111111111111<br>
+        Algorithm: 3DES ECB<br>
+        Crypto operation: Decoding<br>
+        Data: F40379AB9E0EC533F40379AB9E0EC533<br>
+        Padding Method: ISO9797-1 (Padding method 1)<br>
+        Decoded data: 11111111111111111111111111111111<br>
+        * * * * * * * * * * * * * * * * * * * * * * * * * * *<br>
+        Key: 11111111111111111111111111111111<br>
+        Algorithm: 3DES ECB<br>
+        Crypto operation: Encryption<br>
+        Data: 0000000000000000<br>
+        Encrypted data: 82E13665B4624DF5<br>
+        </font>]]></Data>
+    </string>
+
+    <string name="set_bitmap_tip"><Data><![CDATA[<font color="#1E90FF">
+        RAM: This startup is valid, data is lost after restart, you need to download again.<br>
+        ROM: One download is permanent.<br>
+        </font>]]></Data>
+    </string>
+
+
+</resources>

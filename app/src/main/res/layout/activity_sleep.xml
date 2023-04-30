@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:text="Sleep Time(s):"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:id="@+id/etSleepTime"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="10"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:text="Shutdown Time(s):"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:id="@+id/etShutDownTime"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="60"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/doneBtn"
+            style="@style/doneBtn"
+            android:layout_width="match_parent"
+            android:text="Setting Sleep Time" />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</LinearLayout>

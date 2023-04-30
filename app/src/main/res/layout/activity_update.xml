@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_chooseSignFile"
+            style="@style/doneBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="@string/choose_sign_file" />
+
+        <Button
+            android:id="@+id/btn_verifySign"
+            style="@style/doneBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="@string/load_sign_file" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_chooseFile"
+            style="@style/doneBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="@string/choose_update_file" />
+
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/doneBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="@string/terminal_update" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</LinearLayout>

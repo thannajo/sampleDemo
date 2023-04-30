@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_insertCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Insert Card" />
+
+        <RadioButton
+            android:id="@+id/rb_rfCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RF Card" />
+
+        <RadioButton
+            android:id="@+id/rb_felicaCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felica" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="APDU Command"
+        android:textColor="@color/gray"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical">
+
+        <com.morefun.mpos.reader.sampleDemo.view.ClearEditText
+            android:id="@+id/etText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+            android:hint="@string/key_index_tip"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text="0600FFFF0000"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnRFCardPowerOn"
+            style="@style/doneBtn"
+            android:layout_width="match_parent"
+            android:text="@string/card_poweron" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnRFCardPowerOff"
+            style="@style/doneBtn"
+            android:layout_width="match_parent"
+            android:text="@string/card_poweroff" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRFCardApdu"
+        style="@style/doneBtn"
+        android:layout_width="match_parent"
+        android:text="@string/card_apdu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</LinearLayout>
